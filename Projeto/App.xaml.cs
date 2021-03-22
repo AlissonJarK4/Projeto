@@ -3,6 +3,7 @@ using Projeto.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XF_Login.Pages;
 
 namespace Projeto
 {
@@ -14,7 +15,7 @@ namespace Projeto
             InitializeComponent();
 
             //DependencyService.Register<MockDataStore>();
-            MainPage = new GreetPage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

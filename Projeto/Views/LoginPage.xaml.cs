@@ -1,21 +1,35 @@
-﻿using Projeto.ViewModels;
+﻿
+using Projeto;
+using Projeto.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
-namespace Projeto.Views
+namespace XF_Login.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
         public LoginPage()
         {
+            var vm = new LoginViewModel();
+            this.BindingContext = vm;
+
+            vm.ShowInvalidLoginMessage += () => DisplayAlert("Falha no login", "Login Inválido, tente novamente", "OK");
+
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
+            Email.Completed += (object sender, EventArgs e) =>
+            {
+                Senha.Focus();
+            };
+            Senha.Completed += (object sender, EventArgs e) =>
+            {
+                vm.SubmitCommand.Execute(null);
+            };
+        }
+
+        private async void Login_Done(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BottomNavPage());
         }
     }
 }

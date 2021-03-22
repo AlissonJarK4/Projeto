@@ -1,14 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="Projeto.Views.LoginPage"
-             Shell.NavBarIsVisible="False">
+             x:Class="XF_Login.Pages.LoginPage"
+             BackgroundImage="logo.jpg">
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <BoxView HeightRequest="150"/>
+            <Image HorizontalOptions="Center" WidthRequest="400" Source="maco.jpg"/>
+            <StackLayout VerticalOptions="Center" Orientation="Vertical" Spacing="10">
+                <Label Text="Email" FontSize="20">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Entry x:Name="Email" Text="{Binding Email}" HeightRequest="40"
+                           TextColor="Black" BackgroundColor="#FFFDEA"/>
+                <Label Text="Senha" FontSize="20">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Entry x:Name="Senha" Text="{Binding Senha}" HeightRequest="40" 
+                           IsPassword="True" BackgroundColor="#FFFDEA"
+                           TextColor="Black"/>
+            </StackLayout>
+            <Button Command="{Binding SubmitCommand}" Text="Entrar" TextColor="Black" FontFamily="GlacialIndiference"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#088da5" Clicked="Login_Done"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

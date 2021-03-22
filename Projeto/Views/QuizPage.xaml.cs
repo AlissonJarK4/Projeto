@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Projeto
+namespace Projeto.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GreetPage : ContentPage
+    public partial class QuizPage : ContentPage
     {
-        public GreetPage()
+        public QuizPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            DisplayAlert("Alo", "Ola mundo", "BLZ MANO");
         }
     }
 }

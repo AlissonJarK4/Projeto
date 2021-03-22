@@ -1,24 +1,48 @@
 ﻿using Projeto.Views;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace Projeto.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
-        public Command LoginCommand { get; }
-
+        public Action ShowInvalidLoginMessage;
+        public event PropertyChangedEventHandler PropertyChanged = delegate { };
+        private string email;
+        public string Email
+        {
+            get { return email; }
+            set
+            {
+                email = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Email"));
+            }
+        }
+        private string senha;
+        public string Senha
+        {
+            get { return senha; }
+            set
+            {
+                senha = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Senha"));
+            }
+        }
+        public ICommand SubmitCommand { protected set; get; }
         public LoginViewModel()
         {
-            LoginCommand = new Command(OnLoginClicked);
+            SubmitCommand = new Command(OnSubmit);
         }
-
-        private async void OnLoginClicked(object obj)
+        public void OnSubmit()
         {
-            // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+            if (!(email != "") || !(senha != ""))
+            {
+                ShowInvalidLoginMessage();
+            }
         }
     }
 }

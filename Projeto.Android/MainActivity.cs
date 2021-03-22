@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Npgsql;
 
 namespace Projeto.Droid
 {
@@ -16,6 +17,18 @@ namespace Projeto.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            string ConnectionString = "Server=172.18.96.1; Port=5432; User Id=postgres; Password=123456;Database = projeto";
+            try
+            {
+                NpgsqlConnection connection = new NpgsqlConnection(ConnectionString);
+                connection.Open();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
