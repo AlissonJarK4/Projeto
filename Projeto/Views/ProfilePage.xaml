@@ -1,48 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto.Views.ProfilePage">
+             x:Class="Projeto.Views.ProfilePage"
+             BackgroundImageSource="background2.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Perfil" FontSize="50">
-                <Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
-                    </OnPlatform>
-                </Label.FontFamily>
-            </Label>
-            <BoxView BackgroundColor="Black"
-                 HeightRequest="1" />
-            <BoxView BackgroundColor="Black"
-                 HeightRequest="1" />
-            <Label Text="Meus Quizzes" FontSize="20">
-                <Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
-                    </OnPlatform>
-                </Label.FontFamily>
-            </Label>
-            <Label Text="Minhas Buscas" FontSize="20">
-                <Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
-                    </OnPlatform>
-                </Label.FontFamily>
-            </Label>
-            <Label Text="Alterar Dados" FontSize="20">
-                <Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
-                    </OnPlatform>
-                </Label.FontFamily>
-            </Label>
-            <Label Text="Sair" FontSize="20">
-                <Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
-                    </OnPlatform>
-                </Label.FontFamily>
-            </Label>
+            <StackLayout Orientation="Vertical" Padding="20">
+                <Label Text="Perfil" FontSize="40" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <StackLayout Orientation="Horizontal">
+                    <Frame CornerRadius="100" 
+                        HeightRequest="60"
+                        WidthRequest="60"
+                        HorizontalOptions="Start"
+                        Padding="0"
+                        IsClippedToBounds="True">
+                        <Image Source="profile_pic.jpg" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start" />
+                    </Frame>
+                    <Label Text="Nome" FontSize="20" TextColor="Black" VerticalOptions="End">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">NixieOne-Regular.ttf#Nixie One</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <BoxView BackgroundColor="Black"
+                    HeightRequest="1" />
+                <BoxView BackgroundColor="Black"
+                    HeightRequest="1" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Padding="20" Spacing="30">
+                <Label Text="Meus Quizzes" FontSize="20" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Label Text="Minhas Buscas" FontSize="20" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Label Text="Alterar Dados" FontSize="20" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <!--<Label Text="Sair" FontSize="20" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>-->
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

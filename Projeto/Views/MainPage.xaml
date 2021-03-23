@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto.Views.MainPage">
+             x:Class="Projeto.Views.MainPage"
+             BackgroundImageSource="background2_2.png">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
+            <Label Text="Logo" FontSize="40" TextColor="Black">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

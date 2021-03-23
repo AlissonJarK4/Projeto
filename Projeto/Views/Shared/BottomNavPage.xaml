@@ -3,13 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:Projeto.Views"
             x:Class="Projeto.BottomNavPage"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-            android:TabbedPage.ToolbarPlacement="Bottom">
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BackgroundColor="#6FD6FF"
+            BackgroundImageSource="background.png">
 
-    <views:ProfilePage Title="Perfil" IconImageSource="icon_user.png"></views:ProfilePage>
+    <views:MainPage Title="Início" IconImageSource="icon_home.png"></views:MainPage>
 
     <views:SearchPage Title="Buscar" IconImageSource="icon_search.png"></views:SearchPage>
 
     <views:QuizPage Title="Quiz" IconImageSource="icon_read.png"></views:QuizPage>
+
+    <views:ProfilePage Title="Perfil" IconImageSource="icon_user.png"></views:ProfilePage>
 
     <views:OptionsPage Title="Config." IconImageSource="icon_options.png"></views:OptionsPage>
 </TabbedPage>

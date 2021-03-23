@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto.Views.SearchPage">
+             x:Class="Projeto.Views.SearchPage"
+             BackgroundImageSource="background2.png">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
             <Label Text="Buscar" FontSize="40" TextColor="Black">
                 <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
@@ -11,8 +12,9 @@
                     </OnPlatform>
                 </Label.FontFamily>
             </Label>
-            <Entry x:Name="Email" Text="{Binding Email}" HeightRequest="40"
-                TextColor="Black"/>
+            <Frame BackgroundColor="#FFFDEA" BorderColor="Black" CornerRadius="10" HeightRequest="10">
+                <Entry x:Name="Email" Text="{Binding Email}" HeightRequest="0"  TextColor="Black" Keyboard="Default"/>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

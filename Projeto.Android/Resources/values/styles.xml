@@ -15,4 +15,13 @@
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
   </style>
+  <style name="CustomTheme"
+      parent="@android:style/Theme.Holo">
+    <item name="android:actionBarTabTextStyle">@style/CustomTab</item>
+  </style>
+
+  <style name="CustomTab"
+      parent="@android:style/Widget.Holo.ActionBar.TabText">
+    <item name="android:gravity">center</item>
+  </style>
 </resources>

@@ -2,21 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XF_Login.Pages.LoginPage"
-             BackgroundImage="logo.jpg">
+             BackgroundImageSource="background.png">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
-            <BoxView HeightRequest="150"/>
-            <Image HorizontalOptions="Center" WidthRequest="400" Source="maco.jpg"/>
-            <StackLayout VerticalOptions="Center" Orientation="Vertical" Spacing="10">
-                <Label Text="Email" FontSize="20">
+        <StackLayout Orientation="Vertical" Padding="50" Spacing="30">
+            <Label Text="Logo" FontSize="40" TextColor="Black">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <BoxView HeightRequest="75"/>
+            <StackLayout VerticalOptions="Center" Orientation="Vertical" Spacing="5">
+                <Label Text="E-mail" FontSize="20" HeightRequest="20">
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
                         </OnPlatform>
                     </Label.FontFamily>
                 </Label>
-                <Entry x:Name="Email" Text="{Binding Email}" HeightRequest="40"
-                           TextColor="Black" BackgroundColor="#FFFDEA"/>
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" CornerRadius="10" HeightRequest="10">
+                    <Entry x:Name="Email" Text="{Binding Email}" HeightRequest="0"  TextColor="Black" Keyboard="Default"/>
+                </Frame>
                 <Label Text="Senha" FontSize="20">
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
@@ -24,13 +31,28 @@
                         </OnPlatform>
                     </Label.FontFamily>
                 </Label>
-                <Entry x:Name="Senha" Text="{Binding Senha}" HeightRequest="40" 
-                           IsPassword="True" BackgroundColor="#FFFDEA"
-                           TextColor="Black"/>
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" CornerRadius="10" HeightRequest="10">
+                    <Entry x:Name="Senha" Text="{Binding Senha}" HeightRequest="20" IsPassword="True"
+                           TextColor="Black" Keyboard="Default"/>
+                </Frame>
+                <Label Text="Esqueceu a senha?" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
             </StackLayout>
-            <Button Command="{Binding SubmitCommand}" Text="Entrar" TextColor="Black" FontFamily="GlacialIndiference"
-                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"
-                    BackgroundColor="#088da5" Clicked="Login_Done"/>
+            <Button Command="{Binding SubmitCommand}" Text="Entrar" TextColor="Black" FontFamily="GlacialIndifference-Regular" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="180" 
+                    BackgroundColor="#FCDFEB" Clicked="Login_Done"/>
+            <Label Text="Primeiro acesso? Clique aqui" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

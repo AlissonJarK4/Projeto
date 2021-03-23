@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto.Views.EditProfilePage"
-             BackgroundImageSource="background2.png">
+             x:Class="Projeto.Views.RegisterPage"
+             BackgroundImageSource="background.png"
+             >
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!"
