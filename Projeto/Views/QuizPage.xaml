@@ -40,7 +40,8 @@
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnTapped"/>
                 </StackLayout.GestureRecognizers>
-                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="80" HeightRequest="60">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="150" HeightRequest="100" Margin="0" Padding="0">
+                    <Image Source="doctor1.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                 </Frame>
                 <StackLayout Orientation="Vertical">
                     <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
@@ -68,7 +69,8 @@
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnTapped"/>
                 </StackLayout.GestureRecognizers>
-                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="80" HeightRequest="60">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="150" HeightRequest="100" Margin="0" Padding="0">
+                    <Image Source="doctor2.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                 </Frame>
                 <StackLayout Orientation="Vertical">
                     <Label Text="Quiz 2" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
@@ -93,7 +95,8 @@
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnTapped"/>
                 </StackLayout.GestureRecognizers>
-                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="80" HeightRequest="60">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="150" HeightRequest="100" Margin="0" Padding="0">
+                    <Image Source="doctor3.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnTapped"/>
                     </Frame.GestureRecognizers>

@@ -15,10 +15,13 @@
                 </Label>
             </StackLayout>
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="20" Spacing="20">
-                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="75">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnTapped"/>
-                    </Frame.GestureRecognizers>
+                <StackLayout Orientation="Vertical">
+                    <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="125" HeightRequest="125" Margin="0" Padding="0">
+                        <Image Source="doctor1.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
                     <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
@@ -26,11 +29,14 @@
                             </OnPlatform>
                         </Label.FontFamily>
                     </Label>
-                </Frame>
-                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="75">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnTapped"/>
-                    </Frame.GestureRecognizers>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="125" HeightRequest="125" Margin="0" Padding="0">
+                        <Image Source="doctor2.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
                     <Label Text="Quiz 2" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
@@ -38,11 +44,14 @@
                             </OnPlatform>
                         </Label.FontFamily>
                     </Label>
-                </Frame>
-                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="75">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnTapped"/>
-                    </Frame.GestureRecognizers>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="125" HeightRequest="125" Margin="0" Padding="0">
+                        <Image Source="doctor3.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
                     <Label Text="Quiz 3" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
@@ -50,29 +59,28 @@
                             </OnPlatform>
                         </Label.FontFamily>
                     </Label>
-                </Frame>
+                </StackLayout>
             </StackLayout>
             <StackLayout Padding="60">
-                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="100">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="125" HeightRequest="150" Margin="0" Padding="0">
+                    <Image Source="doctor4.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnTapped"/>
                     </Frame.GestureRecognizers>
-                    <Label Text="Destaque" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" 
-                           FontAttributes="Bold" VerticalTextAlignment="Start">
-                        <Label.FontFamily>
-                            <OnPlatform x:TypeArguments="x:String">
-                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
-                            </OnPlatform>
-                        </Label.FontFamily>
-                    </Label>
                 </Frame>
+                <Label Text="Destaque" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" 
+                           FontAttributes="Bold" VerticalTextAlignment="Start">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
             </StackLayout>
             <StackLayout Orientation="Vertical" VerticalOptions="End">
                 <StackLayout VerticalOptions="Start">
-                    <BoxView BackgroundColor="Black"
-                    HeightRequest="1" />
                 </StackLayout>
-                <Frame BackgroundColor="#FFFDEA" HeightRequest="100">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="125" HeightRequest="150" Margin="0" Padding="0">
                     <Label Text="Clique aqui para saber mais sobre o assunto X" FontSize="20" TextColor="Black"
                             HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                         <Label.FontFamily>
