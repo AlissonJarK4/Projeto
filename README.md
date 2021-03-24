@@ -1,6 +1,6 @@
 # Odontoped: Odontopediatria descomplicada
 
-Equipe Highwind
+## Highwind
 
 Integrantes:
 Alisson Jardel
