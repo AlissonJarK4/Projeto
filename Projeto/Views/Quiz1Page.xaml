@@ -5,14 +5,66 @@
              BackgroundColor="#E6EDF7"
              BackgroundImageSource="background2.png">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
-            <Label Text="Quiz" FontSize="40" TextColor="Black">
-                <Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
-                    </OnPlatform>
-                </Label.FontFamily>
-            </Label>
+        <StackLayout>
+            <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
+                <Label Text="Quiz" FontSize="40" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </StackLayout>
+            <StackLayout Padding="30">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="200">
+                    <Label Text="Pergunta" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" 
+                           FontAttributes="Bold" VerticalTextAlignment="Start">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </Frame>
+            </StackLayout>
+            <StackLayout VerticalOptions="End" Padding="10" Spacing="10">
+                <Button Command="{Binding SubmitCommand}" Text="Opção 1" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
+                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback_Correct">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Command="{Binding SubmitCommand}" Text="Opção 2" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
+                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback_Wrong">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Command="{Binding SubmitCommand}" Text="Opção 3" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
+                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback_Wrong">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Command="{Binding SubmitCommand}" Text="Opção 4" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
+                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback_Wrong">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

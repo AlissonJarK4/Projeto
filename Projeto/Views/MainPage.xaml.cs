@@ -16,5 +16,9 @@ namespace Projeto.Views
         {
             InitializeComponent();
         }
+        private async void OnTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Quiz1Page());
+        }
     }
 }

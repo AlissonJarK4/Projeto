@@ -10,15 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace Projeto.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class QuizPage : ContentPage
+    public partial class FeedbackWrongPage : ContentPage
     {
-        public QuizPage()
+        public FeedbackWrongPage()
         {
             InitializeComponent();
         }
-        private async void OnTapped(object sender, EventArgs e)
+        private async void Return_To_StartPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Quiz1Page());
+            await Navigation.PushAsync(new BottomNavPage());
         }
     }
 }

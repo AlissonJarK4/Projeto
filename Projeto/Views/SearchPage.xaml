@@ -35,26 +35,54 @@
                     </Label.FontFamily>
                 </Label>
             </StackLayout>
-            <StackLayout>
-                <Button Text="Entrar" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+            <StackLayout Spacing="20">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <StackLayout>
+                        <Button Text="Filtro 1" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="40" WidthRequest="150" 
-                    BackgroundColor="#FCDFEB">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
-                <StackLayout Spacing="30">
-                    <Button Text="Entrar" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    BackgroundColor="#B4B4B4">
+                            <Button.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                                </OnPlatform>
+                            </Button.FontFamily>
+                        </Button>
+                        <StackLayout Spacing="20">
+                            <Button Text="Filtro 3" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="40" WidthRequest="150" 
-                    BackgroundColor="#FCDFEB">
-                        <Button.FontFamily>
-                            <OnPlatform x:TypeArguments="x:String">
-                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
-                            </OnPlatform>
-                        </Button.FontFamily>
-                    </Button>
+                    BackgroundColor="#B4B4B4">
+                                <Button.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                                    </OnPlatform>
+                                </Button.FontFamily>
+                            </Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button Text="Filtro 2" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="40" WidthRequest="150" 
+                    BackgroundColor="#B4B4B4">
+                            <Button.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                                </OnPlatform>
+                            </Button.FontFamily>
+                        </Button>
+                        <StackLayout Spacing="20">
+                            <Button Text="Filtro 4" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="40" WidthRequest="150" 
+                    BackgroundColor="#B4B4B4">
+                                <Button.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                                    </OnPlatform>
+                                </Button.FontFamily>
+                            </Button>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
                     <BoxView BackgroundColor="Black"
                     HeightRequest="1" />
                 </StackLayout>
@@ -69,6 +97,9 @@
                 </Label>
                 <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" Spacing="75">
                     <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="60" HeightRequest="60">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped"/>
+                        </Frame.GestureRecognizers>
                     </Frame>
                     <StackLayout Orientation="Vertical">
                         <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">

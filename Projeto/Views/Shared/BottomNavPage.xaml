@@ -4,7 +4,7 @@
             x:Class="Projeto.BottomNavPage"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
-            BackgroundColor="#6FD6FF"
+            BackgroundColor="#576774"
             BackgroundImageSource="background.png">
 
     <views:MainPage Title="Início" IconImageSource="icon_home.png">

@@ -37,6 +37,9 @@
             </StackLayout>
             <StackLayout Padding="10"></StackLayout>
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" Spacing="75">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped"/>
+                </StackLayout.GestureRecognizers>
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="80" HeightRequest="60">
                 </Frame>
                 <StackLayout Orientation="Vertical">
@@ -62,10 +65,13 @@
                 
             </StackLayout>
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" Spacing="75">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped"/>
+                </StackLayout.GestureRecognizers>
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="80" HeightRequest="60">
                 </Frame>
                 <StackLayout Orientation="Vertical">
-                    <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Quiz 2" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
@@ -84,10 +90,16 @@
             <BoxView BackgroundColor="Black"
                     HeightRequest="1" />
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" Spacing="75">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped"/>
+                </StackLayout.GestureRecognizers>
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="80" HeightRequest="60">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped"/>
+                    </Frame.GestureRecognizers>
                 </Frame>
                 <StackLayout Orientation="Vertical">
-                    <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Quiz 3" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>

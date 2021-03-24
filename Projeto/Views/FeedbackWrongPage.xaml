@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto.Views.FeedbackPage"
+             x:Class="Projeto.Views.FeedbackWrongPage"
              BackgroundImageSource="background2.png">
     <ContentPage.Content>
+
         <StackLayout>
             <StackLayout>
                 <StackLayout Orientation="Vertical" Padding="20" Spacing="20">
@@ -36,7 +37,7 @@
                         </Label>
                     </StackLayout>
                     <StackLayout Padding="30" VerticalOptions="Center" HorizontalOptions="Center">
-                        <Label Text="Resultado: 1/1" FontSize="25" TextColor="Black" HorizontalTextAlignment="Center">
+                        <Label Text="Resultado: 0/1" FontSize="25" TextColor="Black" HorizontalTextAlignment="Center">
                             <Label.FontFamily>
                                 <OnPlatform x:TypeArguments="x:String">
                                     <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>

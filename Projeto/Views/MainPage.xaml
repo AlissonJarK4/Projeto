@@ -16,6 +16,9 @@
             </StackLayout>
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="20" Spacing="20">
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="75">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped"/>
+                    </Frame.GestureRecognizers>
                     <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
@@ -25,6 +28,9 @@
                     </Label>
                 </Frame>
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="75">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped"/>
+                    </Frame.GestureRecognizers>
                     <Label Text="Quiz 2" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
@@ -34,6 +40,9 @@
                     </Label>
                 </Frame>
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="75">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped"/>
+                    </Frame.GestureRecognizers>
                     <Label Text="Quiz 3" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
@@ -45,6 +54,9 @@
             </StackLayout>
             <StackLayout Padding="60">
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="100">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped"/>
+                    </Frame.GestureRecognizers>
                     <Label Text="Destaque" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" 
                            FontAttributes="Bold" VerticalTextAlignment="Start">
                         <Label.FontFamily>

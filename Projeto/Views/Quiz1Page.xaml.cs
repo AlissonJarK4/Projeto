@@ -16,5 +16,15 @@ namespace Projeto.Views
         {
             InitializeComponent();
         }
+
+        private async void Give_Feedback_Correct(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FeedbackPage());
+        }
+
+        private async void Give_Feedback_Wrong(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FeedbackWrongPage());
+        }
     }
 }

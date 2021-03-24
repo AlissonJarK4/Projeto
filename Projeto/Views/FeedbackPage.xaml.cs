@@ -16,5 +16,9 @@ namespace Projeto.Views
         {
             InitializeComponent();
         }
+        private async void Return_To_StartPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BottomNavPage());
+        }
     }
 }

@@ -9,6 +9,7 @@ namespace Projeto
 {
     public partial class App : Application
     {
+        private NavigationPage Quiz1Page;
 
         public App()
         {
@@ -16,6 +17,7 @@ namespace Projeto
 
             //DependencyService.Register<MockDataStore>();
             MainPage = new NavigationPage(new LoginPage());
+            Quiz1Page = new NavigationPage(new QuizPage());
         }
 
         protected override void OnStart()
