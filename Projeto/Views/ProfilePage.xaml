@@ -15,8 +15,8 @@
                 </Label>
                 <StackLayout Orientation="Horizontal">
                     <Frame CornerRadius="100" 
-                        HeightRequest="60"
-                        WidthRequest="60"
+                        HeightRequest="75"
+                        WidthRequest="75"
                         HorizontalOptions="Start"
                         Padding="0"
                         IsClippedToBounds="True">

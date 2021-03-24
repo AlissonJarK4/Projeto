@@ -7,13 +7,23 @@
             BackgroundColor="#6FD6FF"
             BackgroundImageSource="background.png">
 
-    <views:MainPage Title="Início" IconImageSource="icon_home.png"></views:MainPage>
+    <views:MainPage Title="Início" IconImageSource="icon_home.png">
+    </views:MainPage>
 
-    <views:SearchPage Title="Buscar" IconImageSource="icon_search.png"></views:SearchPage>
+    <views:SearchPage Title="Buscar" IconImageSource="icon_search.png">
+        
+    </views:SearchPage>
 
-    <views:QuizPage Title="Quiz" IconImageSource="icon_read.png"></views:QuizPage>
+    <views:QuizPage Title="Quiz" IconImageSource="icon_read.png">
+        
+    </views:QuizPage>
 
-    <views:ProfilePage Title="Perfil" IconImageSource="icon_user.png"></views:ProfilePage>
+    <views:ProfilePage Title="Perfil" IconImageSource="icon_user.png">
+        
+    </views:ProfilePage>
 
-    <views:OptionsPage Title="Config." IconImageSource="icon_options.png"></views:OptionsPage>
+    <views:OptionsPage Title="Config." IconImageSource="icon_options.png">
+        
+    </views:OptionsPage>
+    
 </TabbedPage>

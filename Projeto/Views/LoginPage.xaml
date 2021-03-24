@@ -14,28 +14,28 @@
             </Label>
             <BoxView HeightRequest="75"/>
             <StackLayout VerticalOptions="Center" Orientation="Vertical" Spacing="5">
-                <Label Text="E-mail" FontSize="20" HeightRequest="20">
+                <Label Text="E-mail" FontSize="20" HeightRequest="20" TextColor="Black">
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
                         </OnPlatform>
                     </Label.FontFamily>
                 </Label>
-                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" CornerRadius="10" HeightRequest="10">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" CornerRadius="10" HeightRequest="40">
                     <Entry x:Name="Email" Text="{Binding Email}" HeightRequest="0"  TextColor="Black" Keyboard="Default"/>
                 </Frame>
-                <Label Text="Senha" FontSize="20">
+                <Label Text="Senha" FontSize="20" TextColor="Black">
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
                         </OnPlatform>
                     </Label.FontFamily>
                 </Label>
-                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" CornerRadius="10" HeightRequest="10">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" CornerRadius="10" HeightRequest="40">
                     <Entry x:Name="Senha" Text="{Binding Senha}" HeightRequest="20" IsPassword="True"
                            TextColor="Black" Keyboard="Default"/>
                 </Frame>
-                <Label Text="Esqueceu a senha?" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start">
+                <Label Text="Esqueceu a senha?" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" Padding="5">
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
@@ -43,9 +43,15 @@
                     </Label.FontFamily>
                 </Label>
             </StackLayout>
-            <Button Command="{Binding SubmitCommand}" Text="Entrar" TextColor="Black" FontFamily="GlacialIndifference-Regular" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+            <Button Command="{Binding SubmitCommand}" Text="Entrar" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="180" 
-                    BackgroundColor="#FCDFEB" Clicked="Login_Done"/>
+                    BackgroundColor="#FCDFEB" Clicked="Login_Done">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
             <Label Text="Primeiro acesso? Clique aqui" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start">
                 <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">

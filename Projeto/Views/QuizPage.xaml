@@ -5,14 +5,104 @@
              BackgroundColor="#E6EDF7"
              BackgroundImageSource="background2.png">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
-            <Label Text="Quiz" FontSize="40" TextColor="Black">
-                <Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
-                    </OnPlatform>
-                </Label.FontFamily>
-            </Label>
+        <StackLayout>
+            <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
+                <Label Text="Quiz" FontSize="40" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="5">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="175" HeightRequest="20">
+                    <Label Text="Categorias" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </Frame>
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="175" HeightRequest="20">
+                    <Label Text="Recentes" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="10"></StackLayout>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" Spacing="75">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="80" HeightRequest="60">
+                </Frame>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label Text="Detalhes do quiz" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+            <BoxView BackgroundColor="Black"
+                    HeightRequest="1" />
+            <StackLayout>
+                
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" Spacing="75">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="80" HeightRequest="60">
+                </Frame>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label Text="Detalhes do quiz" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+            <BoxView BackgroundColor="Black"
+                    HeightRequest="1" />
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" Spacing="75">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="80" HeightRequest="60">
+                </Frame>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label Text="Detalhes do quiz" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
