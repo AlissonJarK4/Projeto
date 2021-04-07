@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Npgsql" Version="5.0.3" />
+    <PackageReference Include="MySql.Data" Version="8.0.23" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
@@ -18,46 +18,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\FeedbackWrongPage.xaml.cs">
-      <DependentUpon>FeedbackWrongPage.xaml</DependentUpon>
+    <Compile Update="Views\FeedbackEscovaPage.xaml.cs">
+      <DependentUpon>FeedbackEscovaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\FeedbackFluorPage.xaml.cs">
+      <DependentUpon>FeedbackFluorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\QuizFluor1Page.xaml.cs">
+      <DependentUpon>QuizFluor1Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\QuizEscova1Page.xaml.cs">
+      <DependentUpon>QuizEscova1Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\QuizFluor2Page.xaml.cs">
+      <DependentUpon>QuizFluor2Page.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\RegisterPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Shared\BottomNavPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\EditProfilePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\FeedbackPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\MainPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\OptionsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\ProfilePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Quiz1Page.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Quiz2Page.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\QuizPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\SearchPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Shared\HorizontalListView.xaml">
+    <EmbeddedResource Update="Views\FilterResults.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -38,13 +38,13 @@
             <StackLayout Padding="10"></StackLayout>
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" Spacing="75">
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnTapped"/>
+                    <TapGestureRecognizer Tapped="ClickFluor1"/>
                 </StackLayout.GestureRecognizers>
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="150" HeightRequest="100" Margin="0" Padding="0">
                     <Image Source="doctor1.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                 </Frame>
                 <StackLayout Orientation="Vertical">
-                    <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Flúor 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
@@ -67,13 +67,13 @@
             </StackLayout>
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" Spacing="75">
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnTapped"/>
+                    <TapGestureRecognizer Tapped="ClickFluor2"/>
                 </StackLayout.GestureRecognizers>
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="150" HeightRequest="100" Margin="0" Padding="0">
                     <Image Source="doctor2.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                 </Frame>
                 <StackLayout Orientation="Vertical">
-                    <Label Text="Quiz 2" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Flúor 2" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
@@ -93,16 +93,16 @@
                     HeightRequest="1" />
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" Spacing="75">
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnTapped"/>
+                    <TapGestureRecognizer Tapped="ClickEscova1"/>
                 </StackLayout.GestureRecognizers>
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="150" HeightRequest="100" Margin="0" Padding="0">
                     <Image Source="doctor3.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnTapped"/>
+                        <TapGestureRecognizer Tapped="ClickEscova1"/>
                     </Frame.GestureRecognizers>
                 </Frame>
                 <StackLayout Orientation="Vertical">
-                    <Label Text="Quiz 3" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Escova 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>

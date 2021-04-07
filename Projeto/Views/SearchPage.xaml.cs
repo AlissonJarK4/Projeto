@@ -11,9 +11,19 @@ namespace Projeto.Views
         {
             InitializeComponent();
         }
-        private async void OnTapped(object sender, EventArgs e)
+        private async void ClickFluor1(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Quiz1Page());
+            await Navigation.PushAsync(new QuizFluor1Page());
+        }
+
+        private async void ClickFluor2(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new QuizFluor2Page());
+        }
+
+        private async void ClickEscova1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new QuizEscova1Page());
         }
     }
 }

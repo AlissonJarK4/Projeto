@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto.Views.QuizEscova1Page"
+             BackgroundColor="#E6EDF7"
+             BackgroundImageSource="background2.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
+                <Label Text="Quiz - Escova 1" FontSize="40" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </StackLayout>
+            <StackLayout Padding="30">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="200">
+                    <Label Text="Existe uma escova ideal para os primeiros dentes. Ela é chamada Meu Primeiro Dentinho. Qual a principal característica desse tipo de escova?" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" 
+                           FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </Frame>
+            </StackLayout>
+            <StackLayout VerticalOptions="End" Padding="10" Spacing="10">
+                <Button Command="{Binding SubmitCommand}" Text="Cabo longo" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
+                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Command="{Binding SubmitCommand}" Text="Cerdas grossas" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
+                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Command="{Binding SubmitCommand}" Text="Cabeça grande" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
+                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

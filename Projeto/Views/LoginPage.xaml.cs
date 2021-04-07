@@ -1,6 +1,7 @@
 ﻿
 using Projeto;
 using Projeto.ViewModels;
+using Projeto.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -30,6 +31,11 @@ namespace XF_Login.Pages
         private async void Login_Done(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new BottomNavPage());
+        }
+
+        private async void Register_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterPage());
         }
     }
 }

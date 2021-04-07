@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto.Views.Quiz1Page"
+             x:Class="Projeto.Views.QuizFluor1Page"
              BackgroundColor="#E6EDF7"
              BackgroundImageSource="background2.png">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
-                <Label Text="Quiz" FontSize="40" TextColor="Black">
+                <Label Text="Quiz - Flúor 1" FontSize="40" TextColor="Black">
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
@@ -16,9 +16,9 @@
                 </Label>
             </StackLayout>
             <StackLayout Padding="30">
-                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="200">
-                    <Label Text="Pergunta" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" 
-                           FontAttributes="Bold" VerticalTextAlignment="Start">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="75" HeightRequest="150">
+                    <Label Text="A imagem representa a quantidade de flúor equivalente a um grão de arroz. Qual a idade ideal para essa quantidade?" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" 
+                           FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
@@ -27,37 +27,34 @@
                     </Label>
                 </Frame>
             </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="160" HeightRequest="130" Margin="0" Padding="0">
+                    <Image Source="https://lh6.googleusercontent.com/ibb5qDoVSghvcTIAtVt_XH9WoKB7CmNt7zMHEvNzg_Zw250cV_iZJL8rRxDVIG8BHNjlqhZzJg_40k7CT3XAsvzT-Bpoi0tzS7F4DzyTuGyXEeuD3efWaK-KLbSgWuBHcsYLqsJY=s800"
+                           HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
+                </Frame>
+            </StackLayout>
             <StackLayout VerticalOptions="End" Padding="10" Spacing="10">
-                <Button Command="{Binding SubmitCommand}" Text="Opção 1" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                <Button Command="{Binding SubmitCommand}" Text="Menos de 3 anos" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
-                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback_Correct">
+                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button Command="{Binding SubmitCommand}" Text="Opção 2" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                <Button Command="{Binding SubmitCommand}" Text="3 a 6 anos" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
-                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback_Wrong">
+                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button Command="{Binding SubmitCommand}" Text="Opção 3" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                <Button Command="{Binding SubmitCommand}" Text="Mais de 6 anos" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
-                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback_Wrong">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
-                <Button Command="{Binding SubmitCommand}" Text="Opção 4" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
-                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="250" 
-                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback_Wrong">
+                    BackgroundColor="#FCDFEB" Clicked="Give_Feedback">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>

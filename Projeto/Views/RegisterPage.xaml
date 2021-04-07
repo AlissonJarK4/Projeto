@@ -5,10 +5,64 @@
              BackgroundImageSource="background.png"
              >
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" Padding="50" Spacing="20">
+            <Label Text="Cadastro" FontSize="40" TextColor="Black">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <BoxView HeightRequest="50"/>
+            <StackLayout VerticalOptions="Center" Orientation="Vertical" Spacing="20">
+                <StackLayout Spacing="10">
+                    <Label Text="Nome" FontSize="20" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Frame BackgroundColor="#FFFDEA" BorderColor="Black" CornerRadius="10" HeightRequest="40">
+                    <Entry x:Name="EntryUserName" HeightRequest="20"
+                           TextColor="Black" Keyboard="Default"/>
+                </Frame>
+                </StackLayout>
+                <StackLayout Spacing="10">
+                <Label Text="E-mail" FontSize="20" HeightRequest="20" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                    <Frame BackgroundColor="#FFFDEA" BorderColor="Black" CornerRadius="10" HeightRequest="40">
+                        <Entry x:Name="EntryUserEmail" HeightRequest="0"  TextColor="Black" Keyboard="Default"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Spacing="10">
+                <Label Text="Senha" FontSize="20" TextColor="Black">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                    <Frame BackgroundColor="#FFFDEA" BorderColor="Black" CornerRadius="10" HeightRequest="40">
+                        <Entry x:Name="EntryUserPassword" HeightRequest="20" IsPassword="True"
+                           TextColor="Black" Keyboard="Default"/>
+                    </Frame>
+                </StackLayout>
+                <Button Command="{Binding SubmitCommand}" Text="Cadastrar" TextColor="Black" BorderColor="Black" BorderWidth="2" CornerRadius="10"
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" HeightRequest="50" WidthRequest="180" 
+                    BackgroundColor="#FCDFEB" Clicked="Register_Done">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

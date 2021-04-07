@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +10,13 @@ namespace Projeto.Views
         public RegisterPage()
         {
             InitializeComponent();
+        }
+        private async void Register_Done(object sender, EventArgs e)
+        {
+            MySQLCon db = new MySQLCon();
+            db.SaveUser(EntryUserName.Text, EntryUserEmail.Text, EntryUserPassword.Text);
+
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Projeto.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Quiz2Page : ContentPage
+    public partial class FilterResults : ContentPage
     {
-        public Quiz2Page()
+        public FilterResults()
         {
             InitializeComponent();
         }

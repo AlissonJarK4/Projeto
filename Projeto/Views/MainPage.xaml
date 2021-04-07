@@ -6,23 +6,19 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
-                <Label Text="Logo" FontSize="40" TextColor="Black">
-                    <Label.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android">CraftyGirls.ttf#CraftyGirls</On>
-                        </OnPlatform>
-                    </Label.FontFamily>
-                </Label>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="logo_horizontal.png" WidthRequest="350" HeightRequest="135" HorizontalOptions="Start" VerticalOptions="Start"></Image>
+                </StackLayout>
             </StackLayout>
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="20" Spacing="20">
                 <StackLayout Orientation="Vertical">
                     <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="125" HeightRequest="125" Margin="0" Padding="0">
                         <Image Source="doctor1.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnTapped"/>
+                            <TapGestureRecognizer Tapped="ClickFluor1"/>
                         </Frame.GestureRecognizers>
                     </Frame>
-                    <Label Text="Quiz 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Flúor 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
@@ -34,10 +30,10 @@
                     <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="125" HeightRequest="125" Margin="0" Padding="0">
                         <Image Source="doctor2.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnTapped"/>
+                            <TapGestureRecognizer Tapped="ClickFluor2"/>
                         </Frame.GestureRecognizers>
                     </Frame>
-                    <Label Text="Quiz 2" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Flúor 2" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
@@ -49,10 +45,10 @@
                     <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="125" HeightRequest="125" Margin="0" Padding="0">
                         <Image Source="doctor3.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnTapped"/>
+                            <TapGestureRecognizer Tapped="ClickEscova1"/>
                         </Frame.GestureRecognizers>
                     </Frame>
-                    <Label Text="Quiz 3" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="Escova 1" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android">GlacialIndifference-Regular.otf#Glacial Indifference Regular</On>
@@ -63,12 +59,12 @@
             </StackLayout>
             <StackLayout Padding="60">
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="125" HeightRequest="150" Margin="0" Padding="0">
-                    <Image Source="doctor4.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
+                    <Image Source="doctor5.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnTapped"/>
+                        <TapGestureRecognizer Tapped="ClickFluor2"/>
                     </Frame.GestureRecognizers>
                 </Frame>
-                <Label Text="Destaque" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" 
+                <Label Text="Destaque: Flúor 2" FontSize="20" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" 
                            FontAttributes="Bold" VerticalTextAlignment="Start">
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
@@ -81,7 +77,7 @@
                 <StackLayout VerticalOptions="Start">
                 </StackLayout>
                 <Frame BackgroundColor="#FFFDEA" BorderColor="Black" WidthRequest="125" HeightRequest="150" Margin="0" Padding="0">
-                    <Label Text="Clique aqui para saber mais sobre o assunto X" FontSize="20" TextColor="Black"
+                    <Label Padding="10" Text="Clique aqui para aprender mais sobre Flúor" FontSize="20" TextColor="Black"
                             HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
