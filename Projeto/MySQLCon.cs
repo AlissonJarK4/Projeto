@@ -136,35 +136,31 @@ namespace Projeto
             }
         }
 
-        //public List<string> EditUser(string name, string email, string password)
-        //{
-        //string connectionString = _connectionString;
-        //try
-        //{
-        //    using (var connection = new MySqlConnection(connectionString))
-        //    {
-        //        OpenConnection();
+        public void EditUser(int id, string name, string email, string password)
+        {
+            string connectionString = _connectionString;
+            try
+            {
+                using (var connection = new MySqlConnection(connectionString))
+                {
+                    OpenConnection();
 
-        //        MySqlCommand cmd = new MySqlCommand("Insert into Users(Name, Email, Password) values(@name,@email,@password)");
-        //        cmd.Parameters.AddWithValue("@name", name);
-        //        cmd.Parameters.AddWithValue("@email", email);
-        //        cmd.Parameters.AddWithValue("@password", password);
-        //        await cmd.ExecuteNonQueryAsync();
-        //    }
-        //}
-        //catch (Exception ex)
-        //{
+                    MySqlCommand cmd = new MySqlCommand("Update Users set Name = '@name', Email = '@email', Password = '@password' where Id = '@id'");
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@password", password);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
 
-        //}
-        //finally
-        //{
-        //    CloseConnection();
-        //}
-        //}
-
-        //public QuizPage LoadQuiz(string name, string email, string password)
-        //{
-
-        //}
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
     }
 }
